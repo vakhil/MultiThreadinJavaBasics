@@ -8,6 +8,14 @@ public class ThreadExample {
         Vault vault = new Vault(545);
         List<Thread> threads = new ArrayList<>();
 
+        Thread threading = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+
+
         threads.add(new PoliceClass());
         threads.add(new AscendingThread(vault));
         threads.add(new DescendingThread(vault));
